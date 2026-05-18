@@ -1,0 +1,11 @@
+# Terraform
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.backup
+infra/*.tfvars
+
+# Node
+app/node_modules/
+
+# Env
+.env
