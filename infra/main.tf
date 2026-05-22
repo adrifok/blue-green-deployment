@@ -34,6 +34,14 @@ terraform {
       protocol    = "-1"
       cidr_blocks = ["0.0.0.0/0"]
     }
+
+    ingress {
+      from_port   = 3001
+      to_port     = 3001
+      protocol    = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
+   }
+
   }
 
   resource "aws_instance" "todo_server" {
